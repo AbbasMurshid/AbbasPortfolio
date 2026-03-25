@@ -1,1073 +1,741 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cybersecurity Portfolio | SOC Analyst</title>
+    <meta name="description"
+        content="Abbas Murshid — Aspiring SOC Analyst Portfolio. CompTIA Security+ certified. SIEM, Threat Hunting, Incident Response, and Digital Forensics projects." />
+    <title>Abbas Murshid | SOC Analyst Portfolio</title>
 </head>
 
-<body class="bg-slate-900 text-slate-300 font-sans antialiased selection:bg-cyan-500/30 selection:text-cyan-200">
-    <div id="app" class="relative">
+<body>
+    <div id="app">
 
-        <!-- Navbar / Top Bar -->
-        <nav class="fixed top-0 left-0 w-full bg-slate-900/90 backdrop-blur-sm border-b border-slate-800 z-50">
-            <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
-                <span class="text-xl font-bold text-cyan-400 tracking-tighter">SOC<span
-                        class="text-white">.Portfolio</span></span>
-                <div class="flex items-center gap-6">
-                    <a href="#contact"
-                        class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact
-                        Me</a>
-                    <a href="#lab"
-                        class="text-sm font-medium text-emerald-400 hover:text-emerald-300 transition-colors">Jump to
-                        Lens
-                        Project &rarr;</a>
+        <!-- ═══ NAVBAR ═══ -->
+        <nav class="navbar">
+            <div
+                style="max-width:72rem;margin:0 auto;padding:0.875rem 1.5rem;display:flex;align-items:center;justify-content:space-between;">
+                <a href="#" style="text-decoration:none;display:flex;align-items:center;gap:0.5rem;">
+                    <span style="font-weight:800;font-size:1.25rem;letter-spacing:-0.04em;"
+                        class="gradient-text">AM</span>
+                    <span
+                        style="font-weight:600;font-size:0.875rem;color:var(--text-primary);letter-spacing:-0.01em;">Abbas
+                        Murshid</span>
+                </a>
+                <div style="display:flex;align-items:center;gap:2rem;">
+                    <a href="#lab" class="nav-link" style="display:none;" id="nav-projects">Projects</a>
+                    <a href="#writeups" class="nav-link" style="display:none;" id="nav-writeups">Write-ups</a>
+                    <a href="#cheatsheets" class="nav-link" style="display:none;" id="nav-sheets">Resources</a>
+                    <a href="#lab" class="nav-link">Projects</a>
+                    <a href="#writeups" class="nav-link">Write-ups</a>
+                    <a href="#cheatsheets" class="nav-link">Resources</a>
+                    <a href="#contact" class="nav-cta">Contact Me</a>
                 </div>
             </div>
         </nav>
 
-        <main class="max-w-5xl mx-auto px-6 pt-28 pb-20 space-y-24">
+        <main style="max-width:68rem;margin:0 auto;padding:7rem 1.5rem 5rem;position:relative;z-index:1;">
 
-            <!-- Hero Section -->
-            <section id="hero" class="text-center space-y-8 animate-fade-in-up">
-                <div
-                    class="inline-block px-4 py-1.5 rounded-full border border-slate-700 bg-slate-800/50 text-xs font-semibold text-cyan-400 uppercase tracking-widest mb-4">
-                    Continuous Learning
+            <!-- ═══ HERO ═══ -->
+            <section id="hero" style="text-align:center;padding:3rem 0 4rem;" class="anim-fade-up">
+                <div class="hero-badge anim-fade-in" style="margin-bottom:1.5rem;">
+                    <span style="width:6px;height:6px;border-radius:50%;background:var(--accent-green);"></span>
+                    Open to Opportunities
                 </div>
-                <h1 class="text-5xl md:text-7xl font-extrabold text-white tracking-tight leading-tight">
-                    Abbas Murshid <br />
-                    <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-emerald-400">Aspiring
-                        SOC Analyst</span>
+
+                <h1
+                    style="font-size:clamp(2.5rem,6vw,4.5rem);font-weight:900;letter-spacing:-0.04em;line-height:1.08;color:var(--text-primary);margin:0 0 0.75rem;">
+                    Abbas Murshid
                 </h1>
+                <p style="font-size:clamp(1.1rem,2.5vw,1.5rem);font-weight:600;margin:0 0 1.5rem;" class="shimmer-text">
+                    Aspiring SOC Analyst
+                </p>
+                <p
+                    style="max-width:36rem;margin:0 auto 2.5rem;color:var(--text-secondary);font-size:0.95rem;line-height:1.7;">
+                    Security+ certified analyst building expertise in SIEM operations, threat hunting, malware analysis,
+                    and incident response through hands-on labs and industry challenges.
+                </p>
 
-                <!-- Highlight Box -->
-                <div
-                    class="max-w-2xl mx-auto mt-8 p-6 rounded-2xl border border-slate-700 bg-slate-800/40 backdrop-blur shadow-2xl shadow-cyan-900/10 transform transition hover:scale-[1.02] duration-300">
-                    <div class="flex flex-col md:flex-row items-center justify-center gap-4 text-center md:text-left">
-                        <div class="flex items-center gap-3">
-                            <div class="p-2 rounded-lg bg-emerald-500/10 text-emerald-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400 uppercase font-semibold">Certification</p>
-                                <p class="font-bold text-white">CompTIA Security+ (802/900)</p>
-                            </div>
+                <!-- Stats -->
+                <div class="hero-stats"
+                    style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;margin-bottom:2.5rem;">
+                    <div class="hero-stat-card anim-fade-up anim-delay-2">
+                        <div class="hero-icon" style="background:rgba(0,229,160,0.1);color:var(--accent-green);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
                         </div>
-                        <div class="hidden md:block w-px h-10 bg-slate-700"></div>
-                        <div class="flex items-center gap-3">
-                            <div class="p-2 rounded-lg bg-cyan-500/10 text-cyan-400">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
-                                </svg>
-                            </div>
-                            <div>
-                                <p class="text-xs text-slate-400 uppercase font-semibold">Platform Rank</p>
-                                <p class="font-bold text-white">Top 2% on TryHackMe</p>
-                            </div>
+                        <div>
+                            <p
+                                style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);font-weight:600;margin:0;">
+                                Certification</p>
+                            <p style="font-weight:700;color:var(--text-primary);margin:0;font-size:0.9rem;">CompTIA
+                                Security+ (802/900)</p>
                         </div>
                     </div>
+                    <div class="hero-stat-card anim-fade-up anim-delay-3">
+                        <div class="hero-icon" style="background:rgba(56,189,248,0.1);color:var(--accent-blue);">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                        </div>
+                        <div>
+                            <p
+                                style="font-size:0.65rem;text-transform:uppercase;letter-spacing:0.1em;color:var(--text-dim);font-weight:600;margin:0;">
+                                Platform Rank</p>
+                            <p style="font-weight:700;color:var(--text-primary);margin:0;font-size:0.9rem;">Top 2% on
+                                TryHackMe</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTAs -->
+                <div style="display:flex;justify-content:center;gap:1rem;flex-wrap:wrap;"
+                    class="anim-fade-up anim-delay-4">
+                    <a href="#lab" class="hero-cta-primary">View Projects <span>↓</span></a>
+                    <a href="#contact" class="hero-cta-secondary">Get in Touch</a>
                 </div>
             </section>
 
-            <!-- Category 1: Home Lab - SIEM & Alert Triage -->
-            <section id="lab" class="space-y-8">
-                <div class="flex items-center gap-4 mb-4">
-                    <h2 class="text-2xl font-bold text-white">SIEM & Alert Triage</h2>
-                    <div class="h-px flex-1 bg-slate-800"></div>
+            <!-- ═══ SIEM & ALERT TRIAGE ═══ -->
+            <section id="lab" style="padding:2rem 0;">
+                <div class="section-header anim-fade-up">
+                    <div class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5" />
+                            <line x1="12" y1="19" x2="20" y2="19" />
+                        </svg>
+                    </div>
+                    <h2 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0;">SIEM & Alert Triage
+                    </h2>
+                    <div class="section-line"></div>
+                    <span class="section-tag">8 Projects</span>
                 </div>
 
-
-                <!-- Project 0: Wazuh SOC Lab (New Featured) -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
+                <!-- Featured: Wazuh SOC Lab -->
+                <div class="featured-card anim-fade-up" style="display:flex;margin-bottom:2rem;">
+                    <div class="scan-line"></div>
+                    <div style="padding:2rem;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                            <span class="featured-badge">★ Live Environment</span>
+                            <span class="tech-tag">Wazuh SIEM</span>
+                        </div>
+                        <h3 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0 0 0.75rem;">
+                            End-to-End SOC Lab: Wazuh SIEM Deployment & Incident Triage</h3>
+                        <p style="color:var(--text-secondary);margin:0 0 1.25rem;line-height:1.7;font-size:0.9rem;">
+                            Deployed Wazuh Manager and agents (Windows 10 + Sysmon, Ubuntu) for real-time threat
+                            detection. Simulated RDP/SSH brute force and LotL attacks (PowerShell) using Kali Linux.
+                            Performed alert triage, file integrity monitoring, and automated reputation checks via
+                            VirusTotal integration.
+                        </p>
+                        <a href="https://plain-hoof-c52.notion.site/Home-SOC-Lab-Threat-Detection-Attack-Simulation-Incident-Investigation-Wazuh-30603ef50a338069b40bfe776afc92f3?source=copy_link"
+                            target="_blank" rel="noopener noreferrer" class="card-link">Read Documentation →</a>
                     </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-emerald-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-emerald-400 rounded-full uppercase tracking-wide">Live
-                                    Environment</span>
-                                <span
-                                    class="text-xs font-mono text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Wazuh
-                                    SIEM</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
-                                End-to-End SOC Lab: Wazuh SIEM Deployment & Incident Triage</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Deployed Wazuh Manager and agents (Windows 10 + Sysmon, Ubuntu) for real-time threat
-                                detection. Simulated RDP/SSH brute force and LotL attacks (PowerShell) using Kali Linux.
-                                Performed alert triage, file integrity monitoring, and automated reputation checks via
-                                VirusTotal integration.
-                            </p>
-                            <a href="https://plain-hoof-c52.notion.site/Home-SOC-Lab-Threat-Detection-Attack-Simulation-Incident-Investigation-Wazuh-30603ef50a338069b40bfe776afc92f3?source=copy_link"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-emerald-400 hover:text-white transition-colors">
-                                Read Documentation <span class="ml-2">&rarr;</span>
-                            </a>
+                    <div style="width:12rem;background:var(--bg-surface);display:flex;align-items:center;justify-content:center;border-left:1px solid var(--border-subtle);"
+                        class="featured-icon-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="width:4rem;height:4rem;color:var(--text-dim);transition:color 0.5s;" width="24"
+                            height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="4 17 10 11 4 5" />
+                            <line x1="12" y1="19" x2="20" y2="19" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Featured: BOTS v1 -->
+                <div class="featured-card anim-fade-up" style="display:flex;margin-bottom:2rem;">
+                    <div class="scan-line"></div>
+                    <div style="padding:2rem;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                            <span class="featured-badge" style="background:var(--accent-blue);">★ Gold Standard</span>
+                            <span class="tech-tag">Threat Hunting</span>
                         </div>
-                        <!-- Decorative Icon: Terminal -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-emerald-500 transition-colors duration-500"
-                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
-                                <polyline points="4 17 10 11 4 5"></polyline>
-                                <line x1="12" y1="19" x2="20" y2="19"></line>
-                            </svg>
+                        <h3 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0 0 0.75rem;">BOTS
+                            v1: Enterprise-Scale Threat Hunting with Splunk</h3>
+                        <p style="color:var(--text-secondary);margin:0 0 1.25rem;line-height:1.7;font-size:0.9rem;">
+                            Led a comprehensive threat hunt within a massive corporate dataset to investigate a
+                            multi-stage attack involving web defacement, credential theft, and persistent access.
+                            Developed complex SPL queries to filter through millions of events.
+                        </p>
+                        <a href="https://medium.com/@abbasmurshidm/boss-of-the-soc-v1-threat-hunting-with-splunk-samclass-9b0e931c8d7d"
+                            target="_blank" rel="noopener noreferrer" class="card-link">View Investigation Report →</a>
+                    </div>
+                    <div style="width:12rem;background:var(--bg-surface);display:flex;align-items:center;justify-content:center;border-left:1px solid var(--border-subtle);"
+                        class="featured-icon-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="width:4rem;height:4rem;color:var(--text-dim);transition:color 0.5s;" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <circle cx="11" cy="11" r="8" stroke-width="1.5" />
+                            <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="1.5" />
+                            <circle cx="11" cy="11" r="3" stroke-width="1.5" />
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Grid: Remaining SIEM Projects -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.25rem;">
+
+                    <!-- Log Analysis with SIEM -->
+                    <article class="project-card project-card-accent anim-fade-up anim-delay-1">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-green">Log Analysis</span>
                         </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Log Analysis with
+                            SIEM (TryHackMe)</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Detecting malicious behavior through log investigation using SIEM solutions with a
+                            structured methodology for effective alert triage.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-log-analysis-with-siem-db98b0c4137a"
+                            target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                     </article>
-                </div>
 
-                <!-- Featured SIEM Project -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-cyan-400 rounded-full uppercase tracking-wide">Featured
-                                    Project</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-400 border border-cyan-500/20 px-2 py-1 rounded">Log
-                                    Analysis</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">
-                                Log Analysis with SIEM (TryHackMe)</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Demonstrating proficiency in detecting malicious behavior through log investigation.
-                                This project analyzes SIEM solutions to identify threats, utilizing a structured
-                                methodology for effective alert triage.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-log-analysis-with-siem-db98b0c4137a"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-cyan-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
+                    <!-- Multi-Vector Alert Triage -->
+                    <article class="project-card project-card-accent anim-fade-up anim-delay-2">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-green">Splunk ES</span>
                         </div>
-                        <!-- Decorative Icon: Log Analysis -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-cyan-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z">
-                                </path>
-                            </svg>
-                        </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Multi-Vector
+                            Alert Triage with Splunk</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Investigated Linux Brute Force, Windows Persistence, and Web Shell scenarios using Splunk
+                            ES. Correlated logs to reconstruct attack timelines.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackmealert-triage-with-splunk-3e5432aaf60d"
+                            target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                     </article>
-                </div>
 
-                <!-- BOTS v1: Industry Challenge -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-yellow-500 to-amber-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-yellow-500/50 overflow-hidden hover:border-yellow-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-yellow-400 rounded-full uppercase tracking-wide">Gold
-                                    Standard</span>
-                                <span
-                                    class="text-xs font-mono text-yellow-400 border border-yellow-500/20 px-2 py-1 rounded">Threat
-                                    Hunting</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-yellow-400 transition-colors">
-                                BOTS v1: Enterprise-Scale Threat Hunting with Splunk</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Led a comprehensive threat hunt within a massive corporate dataset to investigate a
-                                multi-stage attack involving web defacement, credential theft, and persistent access.
-                                Developed complex Splunk Processing Language (SPL) queries to filter through millions of
-                                events.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/boss-of-the-soc-v1-threat-hunting-with-splunk-samclass-9b0e931c8d7d"
-                                target="_blank" rel="noopener noreferrer"
-                                onclick="if(typeof gtag === 'function') gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'BOTS threat hunting'});"
-                                class="inline-flex items-center text-sm font-semibold text-yellow-400 hover:text-white transition-colors">
-                                View Investigation Report <span class="ml-2">&rarr;</span>
-                            </a>
+                    <!-- Alert Triage with Elastic -->
+                    <article class="project-card project-card-blue anim-fade-up anim-delay-3">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-blue">ELK Stack</span>
                         </div>
-                        <!-- Decorative Icon: Target/Magnifying Glass -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-yellow-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <circle cx="11" cy="11" r="8" stroke-width="1.5"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65" stroke-width="1.5"></line>
-                                <circle cx="11" cy="11" r="3" stroke-width="1.5"></circle>
-                            </svg>
-                        </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Alert Triage with
+                            Elastic</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Investigated suspicious activity on IIS and Windows servers using Kibana to correlate web
+                            attacks and unauthorized account management.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-alert-triage-with-elastic-6777141f16eb"
+                            target="_blank" rel="noopener noreferrer" class="card-action card-action-blue">Read Report
+                            →</a>
                     </article>
-                </div>
 
-                <!-- Project 2: Splunk Triage -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-pink-500 to-purple-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-pink-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-pink-400 rounded-full uppercase tracking-wide">Splunk
-                                    ES</span>
-                                <span
-                                    class="text-xs font-mono text-pink-400 border border-pink-500/20 px-2 py-1 rounded">Alert
-                                    Triage</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-pink-400 transition-colors">
-                                Multi-Vector Alert Triage with Splunk</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Investigated three distinct security scenarios (Linux Brute Force, Windows Persistence,
-                                and Web Shell Uploads) using Splunk ES. Correlated logs to reconstruct attack timelines
-                                and identify privilege escalation.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackmealert-triage-with-splunk-3e5432aaf60d"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-pink-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
+                    <!-- ItsyBitsy C2 -->
+                    <article class="project-card project-card-blue anim-fade-up anim-delay-4">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-blue">C2 Traffic</span>
                         </div>
-                        <!-- Decorative Icon: Splunk/Siren -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-pink-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
-                                </path>
-                            </svg>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">ItsyBitsy – C2
+                            Investigation</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Analyzed IDS alerts for potential Command and Control communication by examining HTTP
+                            connection logs in the ELK stack.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-itsybitsy-challenge-0fa864d2b10b"
+                            target="_blank" rel="noopener noreferrer" class="card-action card-action-blue">Read Report
+                            →</a>
+                    </article>
+
+                    <!-- Benign -->
+                    <article class="project-card project-card-accent anim-fade-up">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-green">LOLBINs</span>
                         </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Benign –
+                            Host-Centric Splunk Lab</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Investigated a compromised HR host using Splunk to identify imposter accounts and the use of
+                            LOLBINs for payload delivery.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-benign-f9e553959d6b" target="_blank"
+                            rel="noopener noreferrer" class="card-action">Read Report →</a>
+                    </article>
+
+                    <!-- Compromised Host -->
+                    <article class="project-card project-card-accent anim-fade-up">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-green">Incident Response</span>
+                        </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Investigating a
+                            Compromised Host with Splunk</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Identified adversary backdoors, deconstructed obfuscated PowerShell commands using
+                            CyberChef, and traced network connections to C2 server.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-investigating-with-splunk-1ba14bdef34a"
+                            target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
+                    </article>
+
+                    <!-- Conti Ransomware -->
+                    <article class="project-card project-card-blue anim-fade-up">
+                        <div style="display:flex;align-items:center;justify-content:space-between;">
+                            <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                    <path
+                                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                </svg></div>
+                            <span class="card-tag card-tag-blue">Ransomware</span>
+                        </div>
+                        <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Ransomware
+                            Investigation: Conti Group</h4>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                            Full-chain investigation of Conti ransomware. Tracked Cobalt Strike and AnyDesk persistence,
+                            identified C2 infrastructure at 162.244.32.116.</p>
+                        <a href="https://medium.com/@abbasmurshidm/tryhackme-conti-e830ade1a47f" target="_blank"
+                            rel="noopener noreferrer" class="card-action card-action-blue">Read Full Investigation →</a>
                     </article>
                 </div>
             </section>
 
-            <!-- Category 1: Home Lab - SIEM & Alert Triage (Continued) -->
-            <section id="lab-continued" class="space-y-8">
-
-                <!-- Project 3: Alert Triage with Elastic -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
+            <!-- ═══ CTF WRITE-UP HUB ═══ -->
+            <section id="writeups" style="padding:3rem 0;">
+                <div class="section-header anim-fade-up">
+                    <div class="section-icon" style="background:rgba(56,189,248,0.1);color:var(--accent-blue);">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z" />
+                        </svg>
                     </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-orange-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-orange-400 rounded-full uppercase tracking-wide">ELK
-                                    Stack</span>
-                                <span
-                                    class="text-xs font-mono text-orange-400 border border-orange-500/20 px-2 py-1 rounded">Web
-                                    Attacks</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-orange-400 transition-colors">
-                                Alert Triage with Elastic</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Investigated suspicious activity on IIS and Windows servers using Kibana to correlate
-                                web attacks and unauthorized account management.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-alert-triage-with-elastic-6777141f16eb"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-orange-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon: Elastic -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-orange-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
-                            </svg>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Project 4: ItsyBitsy – C2 Investigation -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-blue-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-blue-400 rounded-full uppercase tracking-wide">Network
-                                    Forensics</span>
-                                <span
-                                    class="text-xs font-mono text-blue-400 border border-blue-500/20 px-2 py-1 rounded">C2
-                                    Traffic</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                                ItsyBitsy – C2 Investigation</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Analyzed IDS alerts for potential Command and Control (C2) communication by examining
-                                HTTP connection logs in the ELK stack.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-itsybitsy-challenge-0fa864d2b10b"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-blue-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon: Network -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-blue-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z">
-                                </path>
-                            </svg>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Project 5: Benign – Host-Centric Splunk Lab -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-purple-500 to-pink-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-purple-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-purple-400 rounded-full uppercase tracking-wide">Splunk
-                                    SPL</span>
-                                <span
-                                    class="text-xs font-mono text-purple-400 border border-purple-500/20 px-2 py-1 rounded">LOLBINs</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-purple-400 transition-colors">
-                                Benign – Host-Centric Splunk Lab</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Investigated a compromised HR host using Splunk to identify imposter accounts and the
-                                use of LOLBINs for payload delivery.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-benign-f9e553959d6b" target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-purple-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon: Magnifying Glass/Search -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-purple-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-                            </svg>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Project 6: Splunk Compromised Host Investigation -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-red-500 to-rose-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-red-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-red-400 rounded-full uppercase tracking-wide">Splunk
-                                    SIEM</span>
-                                <span
-                                    class="text-xs font-mono text-red-400 border border-red-500/20 px-2 py-1 rounded">Incident
-                                    Response</span>
-                            </div>
-                            <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-red-400 transition-colors">
-                                Investigating a Compromised Host with Splunk SIEM</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Identified adversary backdoors (A1berto), deconstructed obfuscated PowerShell commands
-                                using CyberChef, and traced network connections to an external C2 server at
-                                10.10.10.5/news.php.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-investigating-with-splunk-1ba14bdef34a"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-red-400 hover:text-white transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon: Shield/Alert -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-red-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
-                                </path>
-                            </svg>
-                        </div>
-                    </article>
-                </div>
-
-                <!-- Project 7: Conti Ransomware Investigation -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-violet-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
-                    </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-slate-700 overflow-hidden hover:border-violet-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-violet-400 rounded-full uppercase tracking-wide">Incident
-                                    Response</span>
-                                <span
-                                    class="text-xs font-mono text-violet-400 border border-violet-500/20 px-2 py-1 rounded">Ransomware</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-violet-400 transition-colors">
-                                Ransomware Investigation: Conti Group</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Conducted a full-chain investigation of a ransomware attack by the Conti group. Used
-                                Splunk SPL to track Cobalt Strike and AnyDesk persistence, and identified C2
-                                infrastructure at 162.244.32.116.
-                            </p>
-                            <a href="https://medium.com/@abbasmurshidm/tryhackme-conti-e830ade1a47f" target="_blank"
-                                rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-violet-400 hover:text-white transition-colors">
-                                Read Full Investigation <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon: Skull/Lock -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg xmlns="http://www.w3.org/2000/svg"
-                                class="w-16 h-16 text-slate-600 group-hover:text-violet-500 transition-colors duration-500"
-                                fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
-                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
-                                </path>
-                            </svg>
-                        </div>
-                    </article>
-                </div>
-
-            </section>
-
-            <!-- Category 2: CTF Write-ups -->
-            <section id="writeups" class="space-y-12">
-                <div class="flex items-center justify-between mb-8">
-                    <div class="flex items-center gap-4">
-                        <h2 class="text-2xl font-bold text-white">CTF Write-up Hub</h2>
-                        <div class="h-px w-12 bg-slate-800"></div>
-                    </div>
-                    <div
-                        class="hidden md:flex items-center gap-2 px-3 py-1 bg-slate-800 rounded text-xs font-mono text-emerald-400 border border-emerald-500/20">
-                        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-                        218-Day Learning Streak
+                    <h2 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0;">CTF Write-up Hub
+                    </h2>
+                    <div class="section-line"></div>
+                    <div style="display:flex;align-items:center;gap:0.4rem;padding:0.2rem 0.65rem;border:1px solid rgba(0,229,160,0.2);border-radius:4px;"
+                        class="font-mono">
+                        <span
+                            style="width:6px;height:6px;border-radius:50%;background:var(--accent-green);animation:glowPulse 2s infinite;"></span>
+                        <span style="font-size:0.65rem;font-weight:600;color:var(--accent-green);">218-Day Streak</span>
                     </div>
                 </div>
 
-                <!-- Featured Project: Shadow Trace -->
-                <div class="relative group">
-                    <div
-                        class="absolute -inset-0.5 bg-gradient-to-r from-emerald-500 to-cyan-500 rounded-2xl blur opacity-30 group-hover:opacity-75 transition duration-500">
+                <!-- Featured: Shadow Trace -->
+                <div class="featured-card anim-fade-up" style="display:flex;margin-bottom:2.5rem;">
+                    <div class="scan-line"></div>
+                    <div style="padding:2rem;flex:1;display:flex;flex-direction:column;justify-content:center;">
+                        <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:1rem;flex-wrap:wrap;">
+                            <span class="featured-badge">★ Featured Write-up</span>
+                            <span class="tech-tag">Malware Analysis</span>
+                        </div>
+                        <h3 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0 0 0.75rem;">
+                            Shadow Trace</h3>
+                        <p style="color:var(--text-secondary);margin:0 0 1.25rem;line-height:1.7;font-size:0.9rem;">
+                            Comprehensive report documenting simulated threat behavior, persistence mechanisms, and IoC
+                            identification. Deep dive into malware behavior and defensive strategies.</p>
+                        <a href="https://plain-hoof-c52.notion.site/Malware-Analysis-Report-Shadow-Trace-THM-2fe03ef50a3380bdbfadc3beb4b66a63"
+                            target="_blank" rel="noopener noreferrer" class="card-link">Read Report →</a>
                     </div>
-                    <article
-                        class="relative flex flex-col md:flex-row bg-slate-900 rounded-xl border border-emerald-500/50 overflow-hidden hover:border-cyan-400 transition-colors">
-                        <div class="p-8 flex-1 flex flex-col justify-center">
-                            <div class="flex items-center gap-3 mb-4">
-                                <span
-                                    class="px-3 py-1 text-xs font-bold text-slate-900 bg-emerald-400 rounded-full uppercase tracking-wide">Featured
-                                    Write-up</span>
-                                <span
-                                    class="text-xs font-mono text-cyan-400 border border-cyan-500/20 px-2 py-1 rounded">Malware
-                                    Analysis</span>
-                            </div>
-                            <h3
-                                class="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
-                                Shadow Trace</h3>
-                            <p class="text-slate-400 mb-6 leading-relaxed">
-                                Comprehensive report documenting simulated threat behavior, persistence mechanisms, and
-                                IoC identification. This analysis dives deep into malware behavior and defensive
-                                strategies.
-                            </p>
-                            <a href="https://plain-hoof-c52.notion.site/Malware-Analysis-Report-Shadow-Trace-THM-2fe03ef50a3380bdbfadc3beb4b66a63"
-                                target="_blank" rel="noopener noreferrer"
-                                class="inline-flex items-center text-sm font-semibold text-emerald-400 hover:text-cyan-400 transition-colors">
-                                Read Report <span class="ml-2">&rarr;</span>
-                            </a>
-                        </div>
-                        <!-- Decorative Icon/Visual -->
-                        <div
-                            class="hidden md:flex w-48 bg-slate-800/50 items-center justify-center border-l border-slate-700">
-                            <svg viewBox="0 0 24 24"
-                                class="w-16 h-16 text-slate-600 group-hover:text-emerald-500 transition-colors duration-500"
-                                fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M4.459 4.208c.746.606 1.026.56 2.428.466l5.89-.396L19.46 10.04v9.58c0 1.96-1.027 1.493-2.986 1.493h-8.07c-2.427 0-3.36-.606-3.36-3.03V5.56c0-1.166-.28-1.725-.583-1.352zM4.97 4.255V2.39c.84-.28 3.545.047 6.16.233l2.285 2.564v-.653c0-2.331 4.2-1.936 8.167-1.936v7.368c0 7.973-.42 12.356-5.833 13.99-2.285.698-10.493-.654-10.493-4.76V4.255z" />
-                            </svg>
-                        </div>
-                    </article>
+                    <div style="width:12rem;background:var(--bg-surface);display:flex;align-items:center;justify-content:center;border-left:1px solid var(--border-subtle);"
+                        class="featured-icon-panel">
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            style="width:4rem;height:4rem;color:var(--text-dim);transition:color 0.5s;" width="24"
+                            height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                            <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                    </div>
                 </div>
 
-                <!-- Section 1: Blue Team & Defensive Analysis -->
-                <div class="space-y-6">
-                    <h3 class="text-xl font-semibold text-emerald-400 border-l-4 border-emerald-500 pl-4">Blue Team &
-                        Defensive Analysis</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Project 1 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-yellow-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Medium Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-yellow-400 border border-yellow-500/20 px-2 py-1 rounded">Threat
-                                        Intelligence</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-yellow-300 transition-colors">
-                                    TryHackMe: Invite-Only</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">A real-world incident response scenario
-                                    involving the investigation of hijacked Discord invites used for multi-stage malware
-                                    delivery.
-                                </p>
-                                <a href="https://medium.com/@abbasmurshidm/tryhackme-invite-only-challenge-6aa2ce154af4"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-yellow-600/20 text-sm font-semibold text-white hover:text-yellow-300 transition-all">
-                                    Read Walkthrough <span class="ml-2">&rarr;</span>
-                                </a>
+                <!-- Sub: Blue Team & Defensive Analysis -->
+                <div style="margin-bottom:2rem;">
+                    <div class="sub-section-header">
+                        <div class="sub-section-dot"></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--accent-green);margin:0;">Blue Team &
+                            Defensive Analysis</h3>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.25rem;">
+                        <article class="project-card project-card-accent">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-green">Threat Intelligence</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">TryHackMe:
+                                Invite-Only</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Real-world incident response scenario investigating hijacked Discord invites used for
+                                multi-stage malware delivery.</p>
+                            <a href="https://medium.com/@abbasmurshidm/tryhackme-invite-only-challenge-6aa2ce154af4"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Walkthrough →</a>
                         </article>
-
-                        <!-- Project 2 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-emerald-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Notion Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M4.459 4.208c.746.606 1.026.56 2.428.466l5.89-.396L19.46 10.04v9.58c0 1.96-1.027 1.493-2.986 1.493h-8.07c-2.427 0-3.36-.606-3.36-3.03V5.56c0-1.166-.28-1.725-.583-1.352zM4.97 4.255V2.39c.84-.28 3.545.047 6.16.233l2.285 2.564v-.653c0-2.331 4.2-1.936 8.167-1.936v7.368c0 7.973-.42 12.356-5.833 13.99-2.285.698-10.493-.654-10.493-4.76V4.255z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-emerald-400 border border-emerald-500/20 px-2 py-1 rounded">Phishing
-                                        Forensics</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-emerald-300 transition-colors">
-                                    The Greenholt Phish</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Investigation of a phishing campaign
-                                    including email header analysis and malicious attachment extraction.</p>
-                                <a href="https://www.notion.so/TryHackMe-Write-up-The-Greenholt-Phish-1d003ef50a3380b6b530edf1b2f2d832"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-emerald-600/20 text-sm font-semibold text-white hover:text-emerald-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-accent">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.459 4.208c.746.606 1.026.56 2.428.466l5.89-.396L19.46 10.04v9.58c0 1.96-1.027 1.493-2.986 1.493h-8.07c-2.427 0-3.36-.606-3.36-3.03V5.56c0-1.166-.28-1.725-.583-1.352zM4.97 4.255V2.39c.84-.28 3.545.047 6.16.233l2.285 2.564v-.653c0-2.331 4.2-1.936 8.167-1.936v7.368c0 7.973-.42 12.356-5.833 13.99-2.285.698-10.493-.654-10.493-4.76V4.255z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-green">Phishing Forensics</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">The Greenholt
+                                Phish</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Investigation of a phishing campaign including email header analysis and malicious
+                                attachment extraction.</p>
+                            <a href="https://www.notion.so/TryHackMe-Write-up-The-Greenholt-Phish-1d003ef50a3380b6b530edf1b2f2d832"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                         </article>
-                    </div>
-                    <!-- Additional Blue Team Projects -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-                        <!-- Project 3: Tempest – Forensics & Sysmon -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-blue-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Wireshark/Forensics Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-blue-400 border border-blue-500/20 px-2 py-1 rounded">PCAP
-                                        Analysis</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-blue-300 transition-colors">
-                                    Tempest – Forensics & Sysmon</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">A forensics-focused investigation using
-                                    PowerShell and Wireshark to deconstruct malicious payloads and process creation.</p>
-                                <a href="https://medium.com/@abbasmurshidm/tryhackme-tempest-67259b67370e"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-blue-600/20 text-sm font-semibold text-white hover:text-blue-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-blue">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-blue">PCAP Analysis</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Tempest –
+                                Forensics & Sysmon</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Forensics-focused investigation using PowerShell and Wireshark to deconstruct malicious
+                                payloads and process creation.</p>
+                            <a href="https://medium.com/@abbasmurshidm/tryhackme-tempest-67259b67370e" target="_blank"
+                                rel="noopener noreferrer" class="card-action card-action-blue">Read Report →</a>
                         </article>
-
-                        <!-- Project 4: Boogeyman 1 – Full Incident Analysis -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-red-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Email/Phishing Icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-red-400 border border-red-500/20 px-2 py-1 rounded">Phishing
-                                        Analysis</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-red-300 transition-colors">
-                                    Boogeyman 1 – Full Incident Analysis</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Analyzed a multi-stage intrusion starting
-                                    from a phishing email (.eml) to DNS-based data exfiltration.</p>
-                                <a href="https://medium.com/@abbasmurshidm/tryhackme-boogeyman-1-8059db62c83d"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-red-600/20 text-sm font-semibold text-white hover:text-red-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-accent">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path
+                                            d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-green">Phishing Analysis</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Boogeyman 1 –
+                                Full Incident Analysis</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Multi-stage intrusion analysis from phishing email (.eml) to DNS-based data
+                                exfiltration.</p>
+                            <a href="https://medium.com/@abbasmurshidm/tryhackme-boogeyman-1-8059db62c83d"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                         </article>
-
-                        <!-- Project 5: Boogeyman 3 – Advanced TTPs -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-red-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Malware/Skull Icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-red-400 border border-red-500/20 px-2 py-1 rounded">Advanced
-                                        TTPs</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-red-300 transition-colors">
-                                    Boogeyman 3 – Advanced TTPs</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">A complex investigation of advanced
-                                    persistence mechanisms including VBA macros, HTA files, and scheduled tasks.</p>
-                                <a href="https://plain-hoof-c52.notion.site/TryHackMe-Boogeyman-3-30503ef50a338000b076f0453e4bf1f0"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-red-600/20 text-sm font-semibold text-white hover:text-red-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-accent">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <path d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-green">Advanced TTPs</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Boogeyman 3 –
+                                Advanced TTPs</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Complex investigation of advanced persistence mechanisms including VBA macros, HTA
+                                files, and scheduled tasks.</p>
+                            <a href="https://plain-hoof-c52.notion.site/TryHackMe-Boogeyman-3-30503ef50a338000b076f0453e4bf1f0"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                         </article>
-
-                        <!-- Project 6: Windows Forensic Investigation -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-orange-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Medium Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-orange-400 border border-orange-500/20 px-2 py-1 rounded">Endpoint
-                                        Forensics</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-orange-300 transition-colors">
-                                    New Hire Old Artifacts</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Investigated a compromised workstation by
-                                    analyzing a "blind spot" period using advanced Splunk querying and malware artifact
-                                    analysis.</p>
-                                <a href="https://medium.com/@abbasmurshidm/tryhackme-new-hire-old-artifacts-f35b892d2ee5"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-orange-600/20 text-sm font-semibold text-white hover:text-orange-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-blue">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-blue">Endpoint Forensics</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">New Hire Old
+                                Artifacts</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Investigated a compromised workstation analyzing a "blind spot" period using advanced
+                                Splunk querying and malware artifact analysis.</p>
+                            <a href="https://medium.com/@abbasmurshidm/tryhackme-new-hire-old-artifacts-f35b892d2ee5"
+                                target="_blank" rel="noopener noreferrer" class="card-action card-action-blue">Read
+                                Report →</a>
                         </article>
-
-                        <!-- Project 7: PowerShell Forensics -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-teal-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Terminal Icon -->
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
-                                            viewBox="0 0 24 24" stroke="currentColor">
-                                            <polyline stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                points="4 17 10 11 4 5"></polyline>
-                                            <line stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                                x1="12" y1="19" x2="20" y2="19"></line>
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-teal-400 border border-teal-500/20 px-2 py-1 rounded">Threat
-                                        Hunting</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-teal-300 transition-colors">
-                                    PowerShell Forensics: PS Eclipse</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Highlighted proficiency in analyzing
-                                    Windows Event ID 4104 (Script Block Logging) to reconstruct malicious activity and
-                                    extract C2 infrastructure.</p>
-                                <a href="https://medium.com/@abbasmurshidm/tryhackme-ps-eclipse-e2148df0705b"
-                                    target="_blank" rel="noopener noreferrer"
-                                    onclick="if(typeof gtag === 'function') gtag('event', 'click', {'event_category': 'outbound', 'event_label': 'PS Eclipse Investigation'});"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-teal-600/20 text-sm font-semibold text-white hover:text-teal-300 transition-all">
-                                    Analyze Investigation <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-accent">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                        height="14" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                                        stroke-width="2">
+                                        <polyline points="4 17 10 11 4 5" />
+                                        <line x1="12" y1="19" x2="20" y2="19" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-green">Threat Hunting</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">PowerShell
+                                Forensics: PS Eclipse</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Analyzing Windows Event ID 4104 (Script Block Logging) to reconstruct malicious activity
+                                and extract C2 infrastructure.</p>
+                            <a href="https://medium.com/@abbasmurshidm/tryhackme-ps-eclipse-e2148df0705b"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Analyze Investigation
+                                →</a>
                         </article>
                     </div>
                 </div>
 
-                <!-- Section 2: Application Security -->
-                <div class="space-y-6">
-                    <h3 class="text-xl font-semibold text-cyan-400 border-l-4 border-cyan-500 pl-4">Application Security
-                        (OWASP Top 10)</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Project 3 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Medium Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-cyan-400 border border-cyan-500/20 px-2 py-1 rounded">Insecure
-                                        Design</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
-                                    OWASP 2025: Design Flaws</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Deep dive into "Insecure Design" and
-                                    threat modeling in the development lifecycle.</p>
-                                <a href="https://medium.com/@abbasmurshidm/owasp-top-10-2025-application-design-flaws-tryhackme-5379256df01a"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-cyan-600/20 text-sm font-semibold text-white hover:text-cyan-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                <!-- Sub: Application Security -->
+                <div style="margin-bottom:2rem;">
+                    <div class="sub-section-header">
+                        <div class="sub-section-dot sub-section-dot-blue"></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--accent-blue);margin:0;">Application
+                            Security (OWASP Top 10)</h3>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.25rem;">
+                        <article class="project-card project-card-blue">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-blue">Insecure Design</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">OWASP 2025:
+                                Design Flaws</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Deep dive into "Insecure Design" and threat modeling in the development lifecycle.</p>
+                            <a href="https://medium.com/@abbasmurshidm/owasp-top-10-2025-application-design-flaws-tryhackme-5379256df01a"
+                                target="_blank" rel="noopener noreferrer" class="card-action card-action-blue">Read
+                                Report →</a>
                         </article>
-
-                        <!-- Project 4 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-cyan-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- Medium Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-cyan-400 border border-cyan-500/20 px-2 py-1 rounded">IAAA
-                                        Failures</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-cyan-300 transition-colors">
-                                    OWASP 2025: IAAA</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Technical analysis of Authentication and
-                                    Authorization failures with mitigation strategies.</p>
-                                <a href="https://medium.com/@abbasmurshidm/owasp-top-10-2025-iaaa-failures-tryhackme-714dce3267eb"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-cyan-600/20 text-sm font-semibold text-white hover:text-cyan-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card project-card-blue">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M13.54 12a6.8 6.8 0 01-6.77 6.82A6.8 6.8 0 010 12a6.8 6.8 0 016.77-6.82A6.8 6.8 0 0113.54 12zM20.96 12c0 3.54-1.51 6.42-3.38 6.42-1.87 0-3.39-2.88-3.39-6.42s1.52-6.42 3.39-6.42 3.38 2.88 3.38 6.42M24 12c0 3.17-.53 5.75-1.19 5.75-.66 0-1.19-2.58-1.19-5.75s.53-5.75 1.19-5.75C23.47 6.25 24 8.83 24 12z" />
+                                    </svg></div>
+                                <span class="card-tag card-tag-blue">IAAA Failures</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">OWASP 2025:
+                                IAAA</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Technical analysis of Authentication and Authorization failures with mitigation
+                                strategies.</p>
+                            <a href="https://medium.com/@abbasmurshidm/owasp-top-10-2025-iaaa-failures-tryhackme-714dce3267eb"
+                                target="_blank" rel="noopener noreferrer" class="card-action card-action-blue">Read
+                                Report →</a>
                         </article>
                     </div>
                 </div>
 
-                <!-- Section 3: CTF & Cryptographic Deep Dives -->
-                <div class="space-y-6">
-                    <h3 class="text-xl font-semibold text-purple-400 border-l-4 border-purple-500 pl-4">CTF &
-                        Cryptographic Deep Dives</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                        <!-- Project 5 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-purple-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- GitHub Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-purple-400 border border-purple-500/20 px-2 py-1 rounded">Incident
-                                        Response</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
-                                    Windows Forensics: Eviction</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Analyzing Windows Event Logs and mapping
-                                    activity to MITRE ATT&CK.</p>
-                                <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups/blob/main/CTF_Writeups/Eviction/TryHackMe_Writeup_Eviction.md"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-purple-600/20 text-sm font-semibold text-white hover:text-purple-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                <!-- Sub: CTF & Cryptographic Deep Dives -->
+                <div>
+                    <div class="sub-section-header">
+                        <div class="sub-section-dot sub-section-dot-purple"></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:#a78bfa;margin:0;">CTF & Cryptographic Deep
+                            Dives</h3>
+                    </div>
+                    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(20rem,1fr));gap:1.25rem;">
+                        <article class="project-card">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg></div>
+                                <span class="card-tag"
+                                    style="border-color:rgba(167,139,250,0.2);color:#a78bfa;">Incident Response</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Windows
+                                Forensics: Eviction</h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Analyzing Windows Event Logs and mapping activity to MITRE ATT&CK.</p>
+                            <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups/blob/main/CTF_Writeups/Eviction/TryHackMe_Writeup_Eviction.md"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                         </article>
-
-                        <!-- Project 6 -->
-                        <article
-                            class="flex flex-col bg-slate-800/30 rounded-xl border border-slate-700 overflow-hidden hover:border-purple-500/50 transition-colors group">
-                            <div class="p-6 flex-1 flex flex-col">
-                                <div class="flex items-center justify-between mb-4">
-                                    <div class="p-2 rounded-lg bg-slate-700/50 text-slate-300">
-                                        <!-- GitHub Icon -->
-                                        <svg viewBox="0 0 24 24" class="w-6 h-6 fill-current"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                                        </svg>
-                                    </div>
-                                    <span
-                                        class="text-xs font-mono text-purple-400 border border-purple-500/20 px-2 py-1 rounded">Cryptography</span>
-                                </div>
-                                <h4
-                                    class="text-lg font-bold text-white mb-2 group-hover:text-purple-300 transition-colors">
-                                    Breaking RSA</h4>
-                                <p class="text-sm text-slate-400 mb-6 flex-1">Technical exploration of RSA
-                                    vulnerabilities and recovering private keys via prime factorization.</p>
-                                <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups/tree/main/CTF_Writeups/Breaking_RSA"
-                                    target="_blank" rel="noopener noreferrer"
-                                    class="inline-flex items-center justify-center w-full py-2 rounded bg-slate-700/50 hover:bg-purple-600/20 text-sm font-semibold text-white hover:text-purple-300 transition-all">
-                                    Read Report <span class="ml-2">&rarr;</span>
-                                </a>
+                        <article class="project-card">
+                            <div style="display:flex;align-items:center;justify-content:space-between;">
+                                <div class="card-icon-wrap"><svg viewBox="0 0 24 24" width="14" height="14"
+                                        fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg></div>
+                                <span class="card-tag"
+                                    style="border-color:rgba(167,139,250,0.2);color:#a78bfa;">Cryptography</span>
                             </div>
+                            <h4 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0;">Breaking RSA
+                            </h4>
+                            <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.6;flex:1;">
+                                Technical exploration of RSA vulnerabilities and recovering private keys via prime
+                                factorization.</p>
+                            <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups/tree/main/CTF_Writeups/Breaking_RSA"
+                                target="_blank" rel="noopener noreferrer" class="card-action">Read Report →</a>
                         </article>
                     </div>
                 </div>
             </section>
 
-            <!-- Category 3: Security Cheat Sheets -->
-            <section id="cheatsheets" class="space-y-8">
-                <div class="flex items-center gap-4 mb-8">
-                    <h2 class="text-2xl font-bold text-white">Security Cheat Sheets</h2>
-                    <div class="h-px flex-1 bg-slate-800"></div>
-                    <span class="text-xs font-mono text-slate-500">KNOWLEDGE BASE</span>
+            <!-- ═══ SECURITY CHEAT SHEETS ═══ -->
+            <section id="cheatsheets" style="padding:3rem 0;">
+                <div class="section-header anim-fade-up">
+                    <div class="section-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                            <line x1="3" y1="9" x2="21" y2="9" />
+                            <line x1="9" y1="21" x2="9" y2="9" />
+                        </svg>
+                    </div>
+                    <h2 style="font-size:1.5rem;font-weight:800;color:var(--text-primary);margin:0;">Security Cheat
+                        Sheets</h2>
+                    <div class="section-line"></div>
+                    <span class="section-tag">Knowledge Base</span>
                 </div>
 
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                    <!-- Card 1: Threat Intelligence Tools -->
+                <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(15rem,1fr));gap:1.25rem;">
                     <a href="https://plain-hoof-c52.notion.site/Threat-Intelligence-Tools-Cheat-Sheet-30503ef50a3380059a5bd8bc5e713336?source=copy_link"
-                        target="_blank" rel="noopener noreferrer"
-                        class="group block p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
-                        <div class="mb-4 text-cyan-400 group-hover:text-cyan-300">
-                            <!-- Icon: Globe/Search -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <circle cx="11" cy="11" r="8"></circle>
-                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
-                            Threat Intel Tools</h3>
-                        <p class="text-sm text-slate-400">Curated list of tools and resources for effective threat
-                            intelligence gathering.</p>
+                        target="_blank" rel="noopener noreferrer" class="cheat-card anim-fade-up anim-delay-1">
+                        <div class="cheat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8" />
+                                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+                            </svg></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0 0 0.4rem;">Threat
+                            Intel Tools</h3>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.5;">Curated list
+                            of tools and resources for effective threat intelligence gathering.</p>
                     </a>
-
-                    <!-- Card 2: Windows and Sysmon Event ID -->
                     <a href="https://plain-hoof-c52.notion.site/Windows-Event-ID-And-Sysmon-Cheat-Sheet-30503ef50a33803cac17d3cc5e604c62?source=copy_link"
-                        target="_blank" rel="noopener noreferrer"
-                        class="group block p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
-                        <div class="mb-4 text-cyan-400 group-hover:text-cyan-300">
-                            <!-- Icon: Windows/List -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
-                                <line x1="3" y1="9" x2="21" y2="9"></line>
-                                <line x1="9" y1="21" x2="9" y2="9"></line>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
-                            Windows & Sysmon IDs</h3>
-                        <p class="text-sm text-slate-400">Comprehensive reference for Windows Security and Sysmon Event
-                            IDs.</p>
+                        target="_blank" rel="noopener noreferrer" class="cheat-card anim-fade-up anim-delay-2">
+                        <div class="cheat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                <line x1="3" y1="9" x2="21" y2="9" />
+                                <line x1="9" y1="21" x2="9" y2="9" />
+                            </svg></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0 0 0.4rem;">Windows
+                            & Sysmon IDs</h3>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.5;">Comprehensive
+                            reference for Windows Security and Sysmon Event IDs.</p>
                     </a>
-
-                    <!-- Card 3: Wireshark Filters -->
                     <a href="https://plain-hoof-c52.notion.site/Wireshark-Filters-Cheat-Sheet-30503ef50a338031919edcc9057e7d97?source=copy_link"
-                        target="_blank" rel="noopener noreferrer"
-                        class="group block p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
-                        <div class="mb-4 text-cyan-400 group-hover:text-cyan-300">
-                            <!-- Icon: Wireshark/Activity -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
+                        target="_blank" rel="noopener noreferrer" class="cheat-card anim-fade-up anim-delay-3">
+                        <div class="cheat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+                            </svg></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0 0 0.4rem;">
                             Wireshark Filters</h3>
-                        <p class="text-sm text-slate-400">Essential display and capture filters for analyzing network
-                            traffic.</p>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.5;">Essential
+                            display and capture filters for analyzing network traffic.</p>
                     </a>
-
-                    <!-- Card 4: Linux Log Analysis -->
                     <a href="https://plain-hoof-c52.notion.site/Linux-Log-Analysis-Cheat-Sheet-SOC-DFIR-Admin-30503ef50a338041ae4dddafcb6bdf0c?source=copy_link"
-                        target="_blank" rel="noopener noreferrer"
-                        class="group block p-6 rounded-xl bg-slate-800/50 border border-slate-700 hover:border-cyan-500/50 hover:bg-slate-800 transition-all duration-300">
-                        <div class="mb-4 text-cyan-400 group-hover:text-cyan-300">
-                            <!-- Icon: Terminal/Linux -->
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                        target="_blank" rel="noopener noreferrer" class="cheat-card anim-fade-up anim-delay-4">
+                        <div class="cheat-icon"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="4 17 10 11 4 5" />
+                                <line x1="12" y1="19" x2="20" y2="19" />
+                            </svg></div>
+                        <h3 style="font-size:1rem;font-weight:700;color:var(--text-primary);margin:0 0 0.4rem;">Linux
+                            Log Analysis</h3>
+                        <p style="font-size:0.8rem;color:var(--text-secondary);margin:0;line-height:1.5;">Guide to
+                            investigating Linux logs for security incidents and anomalies.</p>
+                    </a>
+                </div>
+            </section>
+
+            <!-- ═══ CONTACT ═══ -->
+            <section id="contact" style="padding:3rem 0 2rem;text-align:center;">
+                <div style="margin-bottom:2.5rem;">
+                    <h2 style="font-size:2rem;font-weight:800;color:var(--text-primary);margin:0 0 0.5rem;"
+                        class="anim-fade-up">Let's Connect</h2>
+                    <p style="color:var(--text-secondary);margin:0;" class="anim-fade-up anim-delay-1">Feel free to
+                        reach out for collaboration or just to say hi.</p>
+                </div>
+                <div
+                    style="display:grid;grid-template-columns:repeat(auto-fill,minmax(9rem,1fr));gap:1rem;max-width:42rem;margin:0 auto;">
+                    <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups" target="_blank"
+                        rel="noopener noreferrer" class="contact-card anim-fade-up anim-delay-1">
+                        <div class="contact-icon" style="color:var(--text-primary);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                            </svg></div>
+                        <span style="font-weight:600;font-size:0.85rem;color:var(--text-secondary);">GitHub</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/abbas-murshid-m" target="_blank" rel="noopener noreferrer"
+                        class="contact-card anim-fade-up anim-delay-2">
+                        <div class="contact-icon" style="color:var(--accent-blue);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                            </svg></div>
+                        <span style="font-weight:600;font-size:0.85rem;color:var(--text-secondary);">LinkedIn</span>
+                    </a>
+                    <a href="https://tryhackme.com/p/AbbasMurshid" target="_blank" rel="noopener noreferrer"
+                        class="contact-card anim-fade-up anim-delay-3">
+                        <div class="contact-icon" style="color:#ef4444;"><svg xmlns="http://www.w3.org/2000/svg"
+                                width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                            </svg></div>
+                        <span style="font-weight:600;font-size:0.85rem;color:var(--text-secondary);">TryHackMe</span>
+                    </a>
+                    <a href="mailto:AbbasMurshid@outlook.com" class="contact-card anim-fade-up anim-delay-4">
+                        <div class="contact-icon" style="color:var(--accent-green);"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round">
-                                <polyline points="4 17 10 11 4 5"></polyline>
-                                <line x1="12" y1="19" x2="20" y2="19"></line>
-                            </svg>
-                        </div>
-                        <h3 class="text-lg font-semibold text-white mb-2 group-hover:text-cyan-400 transition-colors">
-                            Linux Log Analysis</h3>
-                        <p class="text-sm text-slate-400">Guide to investigating Linux logs for security incidents and
-                            anomalies.</p>
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                                <polyline points="22,6 12,13 2,6" />
+                            </svg></div>
+                        <span style="font-weight:600;font-size:0.85rem;color:var(--text-secondary);">Email Me</span>
                     </a>
                 </div>
             </section>
 
         </main>
 
-        <!-- Back to Top Button -->
+        <!-- Back to Top -->
         <a href="#"
-            class="fixed bottom-8 right-8 p-3 bg-cyan-500 text-white rounded-full shadow-lg hover:bg-cyan-400 hover:shadow-cyan-500/30 transition-all duration-300 z-50 transform hover:-translate-y-1 block"
-            aria-label="Back to Top">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+            style="position:fixed;bottom:2rem;right:2rem;width:2.75rem;height:2.75rem;display:flex;align-items:center;justify-content:center;background:var(--accent-green);color:var(--bg-base);border-radius:10px;text-decoration:none;z-index:50;transition:transform 0.2s,box-shadow 0.2s;"
+            onmouseover="this.style.transform='translateY(-3px)';this.style.boxShadow='0 8px 24px rgba(0,229,160,0.3)';"
+            onmouseout="this.style.transform='';this.style.boxShadow='';" aria-label="Back to Top">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24"
+                stroke="currentColor" stroke-width="2.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M5 10l7-7m0 0l7 7m-7-7v18" />
             </svg>
         </a>
 
-        <!-- Contact Section -->
-        <section id="contact" class="max-w-4xl mx-auto text-center space-y-12">
-            <div class="space-y-4">
-                <h2 class="text-3xl font-bold text-white">Let's Connect</h2>
-                <p class="text-slate-400">Feel free to reach out for collaboration or just to say hi.</p>
-            </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <!-- GitHub -->
-                <a href="https://github.com/AbbasMurshid/Cybersecurity-Writeups" target="_blank"
-                    rel="noopener noreferrer"
-                    class="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-800/30 border border-slate-700 hover:border-slate-500 hover:bg-slate-800 transition-all duration-300">
-                    <div class="p-4 rounded-full bg-slate-700/50 text-white group-hover:bg-slate-600 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
-                        </svg>
-                    </div>
-                    <span class="font-semibold text-slate-300 group-hover:text-white transition-colors">GitHub</span>
-                </a>
-
-                <!-- LinkedIn -->
-                <a href="https://www.linkedin.com/in/abbas-murshid-m" target="_blank" rel="noopener noreferrer"
-                    class="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-800/30 border border-slate-700 hover:border-blue-500/50 hover:bg-slate-800 transition-all duration-300">
-                    <div
-                        class="p-4 rounded-full bg-slate-700/50 text-blue-400 group-hover:bg-blue-500/20 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                            fill="currentColor">
-                            <path
-                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                        </svg>
-                    </div>
-                    <span
-                        class="font-semibold text-slate-300 group-hover:text-blue-300 transition-colors">LinkedIn</span>
-                </a>
-
-                <!-- TryHackMe -->
-                <a href="https://tryhackme.com/p/AbbasMurshid" target="_blank" rel="noopener noreferrer"
-                    class="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-800/30 border border-slate-700 hover:border-red-500/50 hover:bg-slate-800 transition-all duration-300">
-                    <div
-                        class="p-4 rounded-full bg-slate-700/50 text-red-500 group-hover:bg-red-500/20 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                        </svg>
-                    </div>
-                    <span
-                        class="font-semibold text-slate-300 group-hover:text-red-300 transition-colors">TryHackMe</span>
-                </a>
-
-                <!-- Email -->
-                <a href="mailto:AbbasMurshid@outlook.com"
-                    class="group flex flex-col items-center gap-4 p-6 rounded-2xl bg-slate-800/30 border border-slate-700 hover:border-emerald-500/50 hover:bg-slate-800 transition-all duration-300">
-                    <div
-                        class="p-4 rounded-full bg-slate-700/50 text-emerald-400 group-hover:bg-emerald-500/20 transition-colors">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
-                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
-                            </path>
-                            <polyline points="22,6 12,13 2,6"></polyline>
-                        </svg>
-                    </div>
-                    <span class="font-semibold text-slate-300 group-hover:text-emerald-300 transition-colors">Email
-                        Me</span>
-                </a>
-            </div>
-        </section>
-
         <!-- Footer -->
-        <footer class="bg-slate-950 text-slate-500 py-8 text-center border-t border-slate-800">
-            <p>&copy; 2024 SOC Analyst Portfolio. Built with Tailwind CSS.</p>
+        <footer
+            style="background:var(--bg-surface);border-top:1px solid var(--border-subtle);padding:2rem 1.5rem;text-align:center;">
+            <p style="color:var(--text-dim);font-size:0.8rem;margin:0;">© 2025 Abbas Murshid. Built with Vite + Tailwind
+                CSS.</p>
         </footer>
-
     </div>
     <script type="module" src="/src/main.js"></script>
 </body>
